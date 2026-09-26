@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather report</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="main-container">
+        <div class="conatiner">
+            <div class="search-box">
+                <input type="text" placeholder="Enter City Name">
+                <img src="assets/search.svg" alt="">
+            </div>
+        </div>
+        <div class="search-weather">
+            <img class="weather-search" src="assets/for js/weather search.png" alt="">
+        </div>
+        <div class="error-content">
+            <img class="error-img" src="assets/for js/error img.png" alt="">
+        </div>
+
+        <div class="weather-content">
+        <section class="weather-info">
+            <div class="location-info">
+            <div class="location">
+                <img class="citylocation" src="assets/location.svg" alt="">
+                <h4 class="cityname">Banglore</h4>
+            </div>
+            <div class="date">
+                <h4><span class="day">Sunday</span> <span class="month">28 jun</span></h4>
+            </div>
+            </div>
+        </section>
+        <section class="temp-info">
+            <div class="temp">
+                <img id="weather-img" src="assets/for js/mist.png" alt="">
+                <div class="state">
+                <h1><span id="temparature">22</span><span class="c-symb">°C</span></h1>
+                <h3 id="weather-condition">Lightning<h3>
+                </div>
+            </div>
+        </section>
+        <section class="humidity-info">
+            <div class="humidity">
+                <img src="assets/humidity.svg" alt="">
+                <div class="percentage">
+                    <h3>Humidity</h3>
+                    <h2><span class="humid" id="humid">12</span><span class="p-symb">%</span></h2>
+                </div>
+            </div>
+            <div class="wind-info">
+                <img src="assets/wind (2).svg" alt="">
+                <div class="wind">
+                    <h3>Wind Speed</h3>
+                    <h2><span class="wind-speed"  id="wind-speed">22</span><span class="w-symb">m/s</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="weather-report">
+            <div class="weather-repo">
+                <div class="weather-day">
+                    <h3 id="date">29 Jun</h3>
+                    <img id="img" src="assets/for js/cloudy.png" alt="">
+                    <h2><span id="temp">30</span><span>°C</span></h2>
+                </div>
+                <div class="weather-day">
+                    <h3 id="date">29 Jun</h3>
+                    <img id="img" src="assets/for js/cloudy.png" alt="">
+                    <h2><span id="temp">30</span><span>°C</span></h2>
+                </div>
+                <div class="weather-day">
+                    <h3 id="date">29 Jun</h3>
+                    <img id="img" src="assets/for js/cloudy.png" alt="">
+                    <h2><span id="temp">30</span><span>°C</span></h2>
+                </div>
+                <div class="weather-day">
+                    <h3 id="date">29 Jun</h3>
+                    <img id="img" src="assets/for js/cloudy.png" alt="">
+                    <h2><span id="temp">30</span><span>°C</span></h2>
+                </div>
+                <div class="weather-day">
+                    <h3 id="date">29 Jun</h3>
+                    <img id="img" src="assets/for js/cloudy.png" alt="">
+                    <h2><span id="temp">30</span><span>°C</span></h2>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

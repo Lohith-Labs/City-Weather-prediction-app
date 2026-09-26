@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100dvh;
+    background: url("assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container{
+    width: 350px;
+    height: 580px;
+    background: linear-gradient(to top ,rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+    border-radius: 30px;
+}
+.search-box{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+.search-box input{
+    width: 100%;
+    padding:15px 45px 15px 16px;
+    border-radius: 99px;
+    border: 3px solid transparent;
+    background-color: rgba(0,0,0,0.15);
+    color: #ffffffb8;
+    border:none;
+    font-size: 16px;
+    outline: none;
+}
+.search-box  img{
+   width: 20px;
+   height:20px;
+   position: absolute;
+   top: 50%;
+   right:45px;
+   transform: translateY(-50%);
+   cursor: pointer;
+    
+}
+.search-box input::placeholder{
+    color: rgba(237, 230, 230, 0.539);
+}
+.location-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(231, 233, 234);
+}
+.location{
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+}
+.citylocation{
+    width: 30px;
+    padding-left: 10px;
+}
+.cityname{
+    font-size: 25px;
+    font-weight: 300;
+}
+.date h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-right: 1.5rem;
+    font-size: 20px;
+}
+.day{
+    font-size: 22px;
+    font-weight: 300;
+}
+.month{
+    font-size: 16px;
+    font-weight: 300;
+}
+.temp{
+    margin: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.temp img{
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+.state{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.state h1{
+    color: #ffffffb8;
+    font-size: 4rem;
+    font-weight: 300;
+}
+.c-symb{
+    font-size: 3rem;
+}
+.state h3{
+    color: #ffffffb8;
+    font-size: 25px;
+    font-weight: 300;
+}
+.humidity-info{
+    color: #ffffffb8;
+    display: flex;
+    justify-content: space-between;
+}
+.humidity{
+    display: flex;
+    align-items: center;
+}
+.humidity img{
+    width: 40px;
+    margin-left: 1rem;
+}
+.percentage h3{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.humid{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.p-symb{
+    font-size: 1rem;
+}
+.wind-info{
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.wind-info img{
+    width: 40px;
+    margin-left: 1rem;
+}
+.wind h3{
+   
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.wind-speed{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.w-symb{
+    font-size: 1rem;
+}
+.weather-report{
+    padding:0px 15px;
+}
+.weather-repo{
+    color: #ffffffb8;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+
+}
+.weather-repo::-webkit-scrollbar{
+    height:8px;
+}
+
+.weather-repo::-webkit-scrollbar-track{
+    
+    background: rgba(255,255,255,0.2);
+    border-radius: 99px;
+    
+}
+.weather-repo::-webkit-scrollbar-thumb{
+    background: rgba(229, 218, 218, 0.194);
+    border-radius: 99px;
+}
+.weather-day{
+    margin-top: 20px;
+    min-width:80px;
+    background: rgba(255, 255, 255, 0.121);
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+.weather-day img{
+    width: 35px;
+    height: 35px;
+}
+.weather-day h3,h2{
+    font-weight: 300;
+}
+.search-weather{
+    display: block;
+    text-align: center;
+}
+.weather-search{
+    width: 250px;
+    max-width: 100%;
+    
+}
+.error-content{
+    display:none;
+    text-align: center;
+}
+.error-img{
+    width: 280px;
+    max-width: 100%;
+}
+.weather-content{
+    display:none;
+}
